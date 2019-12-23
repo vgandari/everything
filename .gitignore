@@ -1,0 +1,26 @@
+.DS_Store
+.idea/
+.vscode/
+.dir-locals.el
+*.unc*
+*.aux
+*.log
+*.out
+*.pdf
+*.tex
+*.html
+*.toc
+*.lot
+*.lof
+*.ind
+*.ilg
+*.idx
+*.lol
+**/auto/*
+
+!preamble.tex
+!frontmatter.tex
+!backmatter.tex
+# !images/
+# !tex/
+# !bib/
