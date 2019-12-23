@@ -29,3 +29,6 @@ Please file an issue if, for example,
 - Any information is inaccurate or unclear and you are not an expert in
   that domain (so that someone may submit a pull request with the
   correction)
+
+Any feature requests for `tok` should be submitted as an issue for that
+repository.
