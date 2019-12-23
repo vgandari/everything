@@ -10,7 +10,6 @@ textbook that is automatically organized using
 
 This project contains a set of YAML files formatted for processing by
 the `tok` tool.
-For more information on how
 
 ## Contributing
 
@@ -20,9 +19,9 @@ documentation for [tok](https://github.com/vgandari/tok).
 Pull requests are welcome from any domain of expertise.
 Pull requests will be accepted if
 
-- there is no plagiarism
-- there are no errors when generating a textbook using `tok`
-- there are no missing references in the generated pdf.
+- There is no plagiarism
+- There are no errors when generating a textbook using `tok`
+- There are no missing references in the generated pdf.
 
 Please file an issue if, for example,
 
