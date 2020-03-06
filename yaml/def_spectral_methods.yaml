@@ -1,0 +1,8 @@
+label: Spectral Methods
+env: def
+alt:
+  - Transform Methods
+after:
+  - def_pde.yaml
+  - def_elliptic_pde.yaml
+  - def_chebyshev_polynomial_exp.yaml

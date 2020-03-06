@@ -1,0 +1,7 @@
+label: Courant-Friedrichs-Lewy condition
+alt:
+  - CFL number
+after:
+  - def_pde.yaml
+  - def_wave_eq.yaml
+  - def_convection_eq.yaml

@@ -1,0 +1,4 @@
+label: Convection Equation
+after:
+  - def_pde.yaml
+wiki: https://en.wikipedia.org/wiki/Convection%E2%80%93diffusion_equation

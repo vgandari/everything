@@ -1,0 +1,3 @@
+label: Wave Equation
+after:
+  - def_pde.yaml

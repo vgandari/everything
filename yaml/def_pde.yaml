@@ -1,0 +1,7 @@
+label: Partial Differential Equation (PDE)
+env: def
+after:
+  - def_ode.yaml
+  - def_discrete_fourier_transform.yaml
+before:
+  - def_poisson_eq.yaml

@@ -1,0 +1,3 @@
+label: Discrete Fourier Series
+after:
+  - def_discrete_fourier_transform.yaml
