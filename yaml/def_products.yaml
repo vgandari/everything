@@ -1,0 +1,7 @@
+label: Products
+nowiki: true
+q:
+  - AFTER
+  - def_cartesian_product.yaml
+  - pairs, tuples, structs, records, classes
+  - Having a value for a type corresponds to having a proof of a proposition
