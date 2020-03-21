@@ -1,0 +1,9 @@
+label: Nullity
+env: def
+main: |
+  The dimension of the null space of a matrix $A$, $\text{Null}(A)$, is
+  the nullity of $A$.
+after:
+  - def_matrix.yaml
+  - def_null_space.yaml
+wiki: https://en.wikipedia.org/wiki/Kernel_(linear_algebra)#Representation_as_matrix_multiplication

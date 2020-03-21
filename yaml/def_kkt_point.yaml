@@ -1,0 +1,6 @@
+label: KKT Point
+env: def
+main: |
+  If
+after:
+  - def_constraint_qualification.yaml

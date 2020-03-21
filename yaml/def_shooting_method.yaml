@@ -1,0 +1,12 @@
+label: Shooting Method
+pre: |
+  The shooting method is a method of solving TPBVPs.
+post: |
+  The shooting method is not a method in the sense that Runge-Kutta or
+  linear multistep methods are methods.
+  The Runge-Kutta and linear multistep methods are methods of
+  integrating an ODE over time when an analytic solution to the integral
+  is unavailable.
+  The Runge-Kutta and linear multistep methods solve an IVP.
+  In the case of TPBVPs, the shooting method is an iterative process of
+  solving IVPs until the final condition is met.

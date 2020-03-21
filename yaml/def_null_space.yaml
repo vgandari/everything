@@ -1,0 +1,15 @@
+label: Null Space
+env: def
+alt:
+  - Kernel
+main: |
+  Given a map $L: V\to W$, $\text{ker}(v) = \{v:L(v)=0\}$.
+  If $A$ is a linear operator (matrix), then the null space of $A$ is
+  given by $\{x\in X : Ax=0\}$.
+after:
+  - def_vector_space.yaml
+  - def_matrix.yaml
+  - def_left_null_space.yaml
+before:
+  - def_nullity.yaml
+  - thm_rank_nullity.yaml

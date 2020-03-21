@@ -1,0 +1,8 @@
+label: Left Null Space
+env: def
+alt:
+  - Cokernel
+after:
+  - def_null_space.yaml
+before:
+  - thm_rank_nullity.yaml

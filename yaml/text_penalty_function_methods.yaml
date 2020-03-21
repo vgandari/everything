@@ -1,0 +1,9 @@
+pre: |
+  The basic idea of penalty function methods is to replace a hard
+  problem, in this case, a nonlinear equality constrained problem, with
+  a sequence of easier problems, in this case a sequence of
+  unconstrained problems.
+  The sequence of unconstrained problems each have the original
+  objective, modified by penalizing constraint violations.
+before:
+  - def_penalty_method.yaml
