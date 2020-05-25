@@ -1,0 +1,14 @@
+nowiki: true
+label: Effects on LSDObox design
+after:
+  - lsdobox_mdo_goals.yaml
+main: |
+  \begin{itemize}
+  \item LSDObox will eventually need to be rewritten.
+    \begin{itemize}
+    \item C++ doesn't offer the features required of the new language.
+    \item Coq feature set
+    \end{itemize}
+  \item LSDObox needs to be able to construct LSDO::Model and
+  LSDO::Equation types from data.
+  \end{itemize}

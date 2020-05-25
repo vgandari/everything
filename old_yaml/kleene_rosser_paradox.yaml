@@ -1,0 +1,4 @@
+label: Kleene–Rosser paradox
+after:
+  - lambda_calc.yaml
+  # Curry's combinatory logic

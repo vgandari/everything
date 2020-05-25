@@ -1,0 +1,4 @@
+wiki: https://en.wikipedia.org/wiki/Model_predictive_control#MPC_vs._LQR
+after:
+  - def_model_predictive_control.yaml
+  - def_linear_quadratic_regulator.yaml

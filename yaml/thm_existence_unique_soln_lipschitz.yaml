@@ -1,0 +1,18 @@
+label: Existence of Unique Solution to Lipschitz System
+type: thm
+main: |
+  Consider $\dot{x}=f(t, x) .$ Let $f(t, x)$ be piecewise continuous in
+  $t$ and Lipschitz in $x$ such that $|f(t, x)-f(t, y)| \leq L|x-y|,
+  \forall x, y \in \mathcal{B}=\left\{x \in \mathbb{R}^{n}|| x-x_{0} |
+  \leq r\right\}, \quad \forall t \in\left[t_{0}, t_{1}\right]$ where
+  $L>0$ is a constant. Then there exists $\delta>0$ such that the system
+  has a unqiue solution over $\left[t_{0}, t_{0}+\delta\right]$ with
+  $t_{0}+\delta \leq t_{1}$
+post: |
+  The important condition is the Lipschitz inequality.
+  Note that
+  $$
+  \mathcal{C}^{0} \Leftarrow \text { Lipshcitz } \Leftarrow \mathcal{C}^{1}
+  $$
+after:
+  - def_continuous.yaml

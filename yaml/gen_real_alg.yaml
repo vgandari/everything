@@ -1,0 +1,12 @@
+label: General Realization Algorithm
+type: def
+ppaths:
+  - ho_kalman.yaml
+  - kung.yaml
+  - markov_params.yaml
+
+post: |
+  Uses I/O data to get Markov parameters, then uses Kung's alg to get A, B, C, D.
+  \begin{enumerate}
+    \item Construct a Hankel matrix from output values
+  \end{enumerate}

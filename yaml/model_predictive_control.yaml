@@ -1,0 +1,4 @@
+after:
+  - def_model_predictive_control.yaml
+  - def_piecewise_affine_function.yaml
+  - vs_mpc_lqr.yaml

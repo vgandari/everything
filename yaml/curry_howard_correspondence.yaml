@@ -1,8 +1,8 @@
 label: Curry Howard Correspondence
 after:
-  - ./def_isomorphism.yaml
-  - ./field_category_theory.yaml
-  - ./field_intuitionistic_logic.yaml
+  - def_isomorphism.yaml
+  - field_category_theory.yaml
+  - field_intuitionistic_logic.yaml
 q:
   - Intuitionistic logic and type theory are the same thing
   - Propositions as types

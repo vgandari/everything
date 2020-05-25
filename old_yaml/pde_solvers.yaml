@@ -1,0 +1,5 @@
+nowiki: true
+after:
+  - ode_solvers.yaml
+  - galerkin.yaml
+  - galerkin_wr.yaml

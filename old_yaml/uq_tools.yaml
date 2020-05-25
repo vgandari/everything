@@ -1,0 +1,6 @@
+nowiki: true
+main: |
+  \begin{itemize}
+  \item \href{https://github.com/uqfoundation/mystic}{mystic}
+  \item \href{http://swmath.org/software/10167}{ALEA}
+  \end{itemize}

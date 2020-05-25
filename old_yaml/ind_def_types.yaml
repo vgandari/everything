@@ -1,0 +1,11 @@
+label: Inductively defined types
+src:
+  - |
+    @inproceedings{coquand1988inductively,
+      title={Inductively defined types},
+      author={Coquand, Thierry and Paulin, Christine},
+      booktitle={International Conference on Computer Logic},
+      pages={50--66},
+      year={1988},
+      organization={Springer}
+    }

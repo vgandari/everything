@@ -1,0 +1,8 @@
+label: Maximal Interval of Existence
+type: def
+main: |
+  The interval $[t_0, t_1]$ in Theorem
+  \ref{thm:thm_existence_unique_soln_lipschitz.yaml} is the maximal
+  interval of existence of a solution.
+after:
+  - thm_existence_unique_soln_lipschitz.yaml

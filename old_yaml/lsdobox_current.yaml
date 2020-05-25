@@ -1,0 +1,60 @@
+If a user fails to declare an output that an Equation supports, then the framework has no way of knowing which argument is an output that
+
+e.g.
+
+Arguments are a,b,c,d
+
+d is declared as an output
+
+Equation supports one more output
+
+Variable that c is assigned to happens not to have an argument that is
+
+
+Promotions and Connections
+Automatic Argument assignment
+Add xtensor classes for C++ API (dense tensor algebra only)
+Add tests in C++ to provide C++ API examples
+Formalize MDO frameworks in Coq
+Write proofs of (de)allocation rules using Coq proof assistant
+Extract OCaml code (no C++ option) from proofs
+In Progress
+Translate OCaml to C++ by hand
+Write tests along the way (make sure nothing gets lost in translation)
+Translate Coq to LaTeX (you would think this is a feature!) for future papers
+Add specifications that will lead to efficient PDE solvers
+
+
+Figure out rules for promotions (see lsdo_aircraft n2 diagram)
+Reversibility
+
+
+OpenMDAO:
+
+- Cannot promote if parent model has a variable of same name
+- Can promote if any sibling model has a variable of same name and shape; creates connection automatically
+- Otherwise, user declares promotions
+
+LSDObox:
+
+- Cannot promote if parent model has a variable of same name.
+- Cannot promote if any sibling model has a variable of same name, but
+  different shape.
+- Otherwise, promote automatically.
+
+- What about variables with same names and shapes that should not be
+  promoted?
+  - The user declares a connection/assignment within the submodel.
+  - Variables that are connected are not promoted?
+  - Variables with arguments assigned to them CAN BE promoted.
+
+LSDObox will need to output
+- objective (to be used to check for convergence by optimizer)
+- constraints/residuals (to be used in RHS of KKT system by optimizer)
+- objective gradient (to be used in RHS of KKT system, and approximate Hessian by optimizer)
+- constraint/residual gradients (to be used in KKT matrix by optimizer)
+- design variables (to be updated by optimizer)
+
+Optimizer provides LSDObox with inputs
+- external inputs (that are not state variables of the model) to objective submodel
+- external inputs (that are not state variables of the model) to constraint/residual submodels

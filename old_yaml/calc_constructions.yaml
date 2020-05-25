@@ -1,0 +1,17 @@
+label: Calculus of Constructions
+env: def
+main: |
+  \cite{coquand1985theorie}
+after:
+  - type_theory.yaml
+  - curry_howard_iso.yaml
+before:
+  - overall_goals.yaml
+src:
+  - |
+    @phdthesis{coquand1985theorie,
+     title={Une th{\'e}orie des constructions},
+     author={Coquand, Thierry},
+     year={1985},
+     school={Paris 7}
+     }

@@ -1,0 +1,12 @@
+nowiki: true
+label: Proof Assistants
+main: |
+  Agda
+  Coq
+  Isabelle
+  Lean
+  Matita
+q:
+  - Comparison of features
+  - Proof assistant vs proof checker
+  - Unification of type theories and lambda calculi

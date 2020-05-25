@@ -1,0 +1,10 @@
+label: Intuitionistic type theory
+src:
+  - |
+    @book{martin1984intuitionistic,
+      title={Intuitionistic type theory},
+      author={Martin-L{\"o}f, Per and Sambin, Giovanni},
+      volume={9},
+      year={1984},
+      publisher={Bibliopolis Naples}
+    }

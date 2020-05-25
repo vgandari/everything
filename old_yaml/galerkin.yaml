@@ -1,0 +1,3 @@
+label: Galerkin method
+before:
+  - galerkin_wr.yaml

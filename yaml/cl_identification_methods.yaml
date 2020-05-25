@@ -1,0 +1,7 @@
+label: Closed Loop Identification Methods
+# main: |
+ppaths:
+  # - tailor_made_param.yaml
+  - instrumental_variable.yaml
+  # - direct_identification.yaml
+  # - indirect_identification.yaml

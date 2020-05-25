@@ -1,0 +1,4 @@
+lable: Lambda Calculus
+after:
+  - turing_machine.yaml
+  - currying.yaml

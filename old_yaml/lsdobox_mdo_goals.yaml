@@ -1,0 +1,13 @@
+nowiki: true
+# LSDObox Goals (MDO)
+# after:
+#   - maud.yaml
+#   - concat_vars.yaml
+#   - mem_magmt.yaml
+#   - uq.yaml
+#   - reversibility.yaml
+#   - surf.yaml
+#   - ode_solvers.yaml
+#   - pde_solvers.yaml
+q:
+  - run, step, and solve

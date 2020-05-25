@@ -18,10 +18,8 @@
 *.lol
 **/auto/*
 
-!preamble.tex
-!frontmatter.tex
-!backmatter.tex
+!code/
+!images/
+!texinput/
+!yaml/
 output/
-# !images/
-# !tex/
-# !bib/

@@ -1,0 +1,163 @@
+nowiki: true
+label: Overall Goals
+after:
+  - calc_constructions.yaml
+  - automated_theorem_proving.yaml
+before:
+  # - lsdobox_mdo_goals.yaml
+  - effects_lsdobox.yaml
+  - pl_journals.yaml
+src:
+  - |
+    @article{PAULINMOHRING1993607,
+    title = "Synthesis of ML programs in the system Coq",
+    journal = "Journal of Symbolic Computation",
+    volume = "15",
+    number = "5",
+    pages = "607 - 640",
+    year = "1993",
+    issn = "0747-7171",
+    doi = "https://doi.org/10.1016/S0747-7171(06)80007-6",
+    url = "http://www.sciencedirect.com/science/article/pii/S0747717106800076",
+    author = "Christine Paulin-Mohring and Benjamin Werner",
+    abstract = "The system Coq (Dowek et al., 1991) is an environment
+    for proof development based on the Calculus of Constructions
+    (Coquand, 1985) (Coquand and Huet, 1985) enhanced with inductive
+    definitions (Coquand and Paulin-Mohring, 1990). From a constructive
+    proof formalized in Coq, one extracts a functional program which can
+    be compiled and executed in ML. This paper describes how to obtain
+    ML programs from proofs in Coq. The methods are illustrated with the
+    example of a propositional tautology checker. We study the
+    specification of the problem, the development of the proof and the
+    extraction of the executable ML program. Part of the example is the
+    development of a normalization function for IF-expressions, whose
+    termination has been studied in several formalisms (Leszczylowski,
+    1981) (Paulson, 1986) (Dybjer, 1990). We show that the total program
+    using primitive recursive functionals obtained out of a structural
+    proof of termination leads to an (at first) surprisingly efficient
+    algorithm. We explain also how to introduce a fixpoint and get the
+    usual recursive program. Optimizations which are necessary in order
+    to obtain efficient programs from proofs will be explained. We also
+    justify the properties of the final ML program with respect to the
+    initial specification."
+    }
+main: |
+  \begin{itemize}
+    \item Do the following on an embedded system, satsifying NASA embedded
+    system requirements if possible.
+    \begin{itemize}
+    \item Build types from data
+      \begin{itemize}
+      \item Types are LSDO::Model types
+      \end{itemize}
+    \item Construct models from type instances (LSDO::Model objects)
+    \item Given a high level objective, construct models. There are two
+    reasons for doing this.
+    \begin{enumerate}
+      \item An agent (robot) can construct a model of its environment
+      \item LSDObox can construct novel designs that an engineer would not
+      otherwise come up with.
+      \begin{itemize}
+        \item Similar to how Chess and Go masters marvel at the ``alien''
+        strategies that AlphaZero and AlphaGo use, engineers can marvel at
+        the ``alien'' designs that LSDObox produces.
+        \item For example, an aircraft design could have multiple surfaces
+        that usually don't exist on aircraft in order to meet some
+        flying quality requirements.
+        \item A robot could learn about its environment on Mars and come
+        up with a new strategy to meet science objectives without waiting
+        for Mission Control to come up with a new mission plan depending n
+        mission objectives.
+      \end{itemize}
+    \end{enumerate}
+    \item In the event that the high level objective is an incomplete
+    specification, LSDObox could prompt the user (or in the case of a Mars
+    science mission, Mission Control) to provide feedback on how best to
+    continue solving the problem.
+    \item In the case where an agent is constructing a model of its
+    environment,
+    \begin{itemize}
+      \item A Coq-like system could be used to generate statements about
+      each LSDO::Model object.
+      \item From the definitions and properties of each LSDO::Model
+      object, LSDO could generate a program using these objecst as in
+      \cite{PAULINMOHRING1993607}.
+      \item Use Machine Learning to extract behavior of objects in
+      environment to a set of LSDO::Equation types.
+      \item Each LSDO::Equation type is taken as a mathematical axiom;
+      e.g.
+      \begin{itemize}
+        \item Conservation of Mass is not to be violated.
+        \item Conservation of Energy is not to be violated
+      \end{itemize}
+      \item In certain cases, uncertainty quantification needs to be
+      involved.
+      \begin{itemize}
+        \item Physical constants contain some error, but for many
+        applications, the amount of error in a physical constant is not
+        significant. UQ will not be necessary for such precise quantities,
+        and the user can specify when UQ is necessary to reduce
+        computational complexity.
+        \item Known physical constants are preloaded into model
+        generation.
+        \item LSDO::Equation types that only use physics models that
+        are assumed to contain zero uncertainty are treated as axioms and
+        the Coq-like system can behave exactly like Coq.
+      \end{itemize}
+    \end{itemize}
+    \end{itemize}
+    \item A new programming language is necessary for the following
+    reasons
+    \begin{itemize}
+      \item Generation and verification (proof) of statements (theorems)
+      is equivalent to writing a programt hat satisfies a specification.
+      The source of the specification is the data generated from observing
+      and interacting with the physical world (in the case of an agent
+      exploring an environment; e.g. a Mars science mission).
+      \item Writing and checking a program (proof) is a pre-compilation
+      step.
+      \item At the moment, Coq allows the user to write a specification
+      (theorem) and assists the user in writing the program (proof). Coq
+      can check the proof (run the program) and export to some other
+      language, such as ML. In fact, Coq has been used to create a
+      formally verified C compiler.
+      \item The process of creating a program in Coq, exporting to another
+      language, compiling the program in that language, and then running
+      the program natively involves several tools and user intervention.
+      \item In situations where user intervention is highly limited, as in
+      any robotic mission to Mars, this process is not suitable for long
+      distance or long duration missions.
+      \item Another reason for desiging a new language is that the
+      definition of types in Coq is entirely up to the user. Types must be
+      defined as all terms are defined in mathematics. There is no
+      uncertainty.
+      \item Finally, types cannot be constructed from data.
+      \item The problem of choosing tactics.
+      \item Organizing theorems into a graph and determining which ones
+      are ``important'' enough to store in memory, which ones are ``easy''
+      enough to prove that they do not need to be stored in memory.
+    \end{itemize}
+    \item {\bfseries Intellectual Merit}
+    \begin{itemize}
+      \item Create novel designs.
+    \end{itemize}
+    \item {\bfseries Broader Impacts}
+    \begin{itemize}
+      \item Contribution to mathematics, automated theorem proving
+      \item Incorporate UQ into physics-based model verification
+      \item Mix physics-based and model-based MDO
+    \end{itemize}
+  \end{itemize}
+q:
+  - relate to formal verification
+  - Explainable artificial intelligence
+  - Build a graph of verified statements as in tok, and find the
+    ``important'' ones. Make the important ones easy to access.
+  - How does Coq check proofs? It's not as simple as running the program
+    defined by the proof.
+  - Programming language requirements
+  - Compare Coq, Isabell, and Lean
+  - Broader Impacs and Intellectual Merit are both lacking in
+    specificity.
+  - there's a lot in this one node. Split it onto many nodes and let tok
+    sort it for you.

@@ -1,0 +1,4 @@
+label: Type Theory
+before:
+  - typed_lambda_calc.yaml
+  - intuitionistic_type_theory.yaml

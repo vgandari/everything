@@ -1,0 +1,5 @@
+label: Instrumental Variable
+type: def
+ppaths:
+  - least_squares_est.yaml
+  - persistently_exciting.yaml

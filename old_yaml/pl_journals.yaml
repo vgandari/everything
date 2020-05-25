@@ -1,0 +1,10 @@
+label: Programming Language Research Journals
+main: |
+  \begin{itemize}
+  \item \href{https://dl.acm.org/journal/pacmpl}{Proceedings of the ACM
+  on Programming Languages}
+  \item
+  \href{https://www.journals.elsevier.com/journal-of-computer-languages}{Journal
+  of Computer Language}
+  \item https://www.cs.cmu.edu/~mleone/language/publications.html
+  \end{itemize}

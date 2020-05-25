@@ -1,0 +1,6 @@
+label: Kung Algorithm
+type: def
+ppaths:
+  - ho_kalman.yaml
+  - svd.yaml
+  - hankel.yaml

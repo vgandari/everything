@@ -1,0 +1,9 @@
+label: Continuous Function
+type: def
+main: |
+  A function $f(x)$ is continuous at a point $x$ if $\forall \epsilon,
+  \exists \delta$ s.t.
+  $$
+  |x-y|<\delta \Rightarrow|f(x)-f(y)|<\epsilon
+  $$
+  The set of continuous functions is denoted by $\mathcal{C}^0$.

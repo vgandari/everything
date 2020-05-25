@@ -1,0 +1,3 @@
+label: Curry-Howard Isomorphism
+after:
+  - typed_lambda_calculus.yaml

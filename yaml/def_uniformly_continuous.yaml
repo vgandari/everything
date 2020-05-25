@@ -1,0 +1,10 @@
+label: Uniformly Continuous Function
+type: def
+main: |
+  A function $f$ is uniformly continuous if $\delta$ only depends on
+  $\epsilon,$ not on $x .$
+post: |
+  Uniformly continuous refers to a global property of a function and is
+  a stronger statement than continuous at a point.
+after:
+  - def_continuous.yaml
