@@ -1,0 +1,139 @@
+pre: |
+  MIMO systems have multiple inputs and multiple outputs that cannot be
+  decomposed into SISO systems because each output may depend on more
+  than one input.
+
+  As a result, PID controllers, which typically use feedback from a
+  single output, are difficult to tune as the number of outputs grows
+  and the amount of coupling between the multiple outputs of the system.
+
+  PID controllers are difficult to tune when applied to MIMO systems.
+  Solves an online optimization problem.
+
+main: |
+  Model Predictive Control (MPC) is a
+
+  MPC uses a model of the plant to predict future behavior.
+
+  The algorithm solves an optimization problem to select the optimal
+  control input.
+
+  The optimization problem is solved online.
+
+  Similar to an LQR problem, MPC minimizes a cost function, or performance index.
+
+  One difference is that the LQR problem has a closed form solution,
+  which is the solution to the continuous time Riccati differential
+  equation in the case of the finite-horizon, continuous-time LQR
+  problem, continuous time algebraic Riccati equation in the case of the
+  infinite-horizon, continuous-time LQR problem, dynamic Riccati
+  equation in the case of the finite-horizon, discrete-time LQR, and
+  discrete time algebraic Riccati equation (DARE) in the case of the
+  infinite-horizon, discrete-time LQR.
+
+  In general, optimal control problems of nonlinear systems do not have
+  closed form solutions and require the use of an optimizer.
+
+  Also refered to as receding horizon control.
+
+  reference/setpoint
+  manipulated variables
+  output
+  estimated states
+  prediction horizon
+  sample time
+
+post: |
+  MPC has the following advantages.
+
+  An MPC algorithm can handle constraints such as upper and lower bounds
+  on the state, such as speed, roll rate, and temperature.
+
+  The control inputs that result from an MPC algorithm will produce a
+  trajectory that satisfies such constraints, assuming a perfect model
+  and the constraints are feasible.
+
+  MPC algorithms can also take into account future conditions.
+
+  For example, consider an automatic transmission in a car.
+
+  Ideally, an automatic transmission will select the gear most
+  appropriate for the driver.
+
+  If the driver wants to cruise, the automatic transmission should
+  choose a gear to lower fuel consumption, which requires a lower engine
+  speed, so a higher gear is selected.
+
+  If the driver needs to accelerate quickly, the automatic transmission
+  should select a gear that maximizes engine torque.
+
+  Since there is a range of engine speeds where torque is maximized, the
+  automatic transmision must select a gear where the engine speed will
+  produce the most torque, usually a lower gear.
+
+  Suppose a racing league allows or requires automatic transmission in
+  each team's car, and one team is designing the software for an
+  automatic transmission.
+
+  Ordinarily, the race driver would brake into a corner, downshifting to
+  prepare to accelerate coming out of the corner.
+
+  An automatic transmission designed for fuel efficiency would not
+  downshift early enough, selecting a gear that is too high as the race
+  car comes out of the turn, preventing the engine from producing its
+  maximum torque, and limiting the accceleration of the car during a
+  race.
+
+  On the other hand, an automatic transmission designed to maximize
+  torque during the race would be inefficient on the straights,
+  requiring more pit stops to refuel, or if refueling is not allowed,
+  adding weight to the race car (or worst of all, using all the fuel
+  before the car can complete the race).
+
+  This hypothetical team would need to tailor the sequence of gear
+  selections to the track to maximize acceleration coming out of turns
+  and maximize efficiency as the car approaches its top speed.
+
+  This contrived example serves to illustrate the \textit{preview
+  capability} of MPC in a racing environment, but no automatic
+  transmission would be able to account for other drivers on the track.
+
+  That is, even though it would reduce the cognitive load on the driver,
+  an MPC algorithm in an automatic transmission on a race car would be
+  impractical.
+
+  This explains the preference for manual transmissions over automatic
+  transmissions.
+
+  Drivers who are accustomed to predict the car and engine speed can
+  select the appropriate gear ahead of time, explaining the appeal of
+  having ``more control" over the car.
+
+after:
+  - multi_input_multi_output_system.yaml
+  - ./PID_controller.yaml
+  - ./linear_quadratic_regulator.yaml
+before:
+  - x_adaptive_MPC.yaml
+  - x_gain_scheduling_MPC.yaml
+  - x_nonlinear_MPC.yaml
+urls:
+  ? |
+    Understanding Model Predictive Control, Part 1: Why Use MPC?
+  : https://www.youtube.com/watch?v=8U0xiOkDcmw
+  ? |
+    Understanding Model Predictive Control, Part 2: What is MPC?
+  : https://www.youtube.com/watch?v=cEWnixjNdzs
+  ? |
+    Understanding Model Predictive Control, Part 3: MPC Design Parameters
+  : https://www.youtube.com/watch?v=dAPRamI6k7Q
+q:
+  - Needs work!
+  - Needs figures
+  - Use trajectory from previous prediction to warm start trajectory for
+    current prediction, use AGPI
+  - Use SURF to provide performance guarantees on predictions
+  - Control horizon typically 10-20\% of prediction horizon
+  - Prediction horizon minimum 2-3 time steps
+  - Sampling time needs to be small enough to capture dynamics of the
+    system, but large enough not to

@@ -1,0 +1,6 @@
+after:
+  - ./def_constraint.yaml
+  - ./def_active_constraint.yaml
+  - ./def_nonsingular_matrix.yaml
+main: |
+  Basic and nonbasic set (UCSD MATH 271C 2.14)
