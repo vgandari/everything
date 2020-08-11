@@ -1,26 +1,42 @@
 # everything
 
-This repository is meant to contain everything...or at least some of it.
-This is where I keep all the notes for everything I (am supposed to)
-know.
-Whenever I want to look up a topic, I check to see if I've written a
-file for it.
-If I have, I generate a PDF document that contains everything I've had
-to learn (and may need to relearn) leading up to that topic or those
-topics of interest.
-I use my tool [Tree of Knowledge (tok)](https://github.com/vgandari/tok) to
-generate a textbook-like document.
-All topics in the document are guaranteed to be sotred in a way that
-will make sense to the reader.
+## Book Blurb
 
-If you really want to include _everything_, run
+This repository is meant to contain "Everything...or at Least Some of
+It".
+This is where I keep my notes from past coursework and literature
+reviews.
+These notes are written so that
+[Tree of Knowledge (`tok`)](https://github.com/vgandari/tok) generates a
+structured, textbook-like document from my notes.
+
+## How to Generate the Book
+
+The document is generated from a subset of the files in the `main`
+directory containing text for some topics of interest.
+
+Here's what happens when you run `tok`:
+
+- `tok` builds a graph of all topics relevant to the topics of interest
+  based on the dependency relationships declared in the files.
+- `tok` sorts the topics in the "best" order while respecting dependency
+ relationships declared in the files
+- `tok` calls LaTeX to generate a textbook-like PDF document that can be
+  used for reference.
+
+The resulting document will include all, and only all relevant topics
+leading up to the topic(s) of interest.
+To include _everything_, run
 
 ```sh
 tok $(find . -name '*.yaml' -print) -wu --headings
 ```
 
+in the `main` directory.
+
 For shorter documents, the `--extra-headings` option may make for nicer
 chapter/section heading generation and placement.
 
 See the documentation for
-[Tree of Knowledge (tok)](https://github.com/vgandari/tok) for help.
+[Tree of Knowledge (tok)](https://github.com/vgandari/tok) for help and
+more options.
