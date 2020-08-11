@@ -1,6 +1,0 @@
-q:
-  - work by converting continuous problem into NLP
-before:
-  - vs_direct_indirect_transcription.yaml
-  - shooting_methods.yaml
-  - simultaneous_methods.yaml

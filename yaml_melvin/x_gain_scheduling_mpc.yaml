@@ -1,3 +1,0 @@
-after:
-  - x_gain_scheduling.yaml
-  - x_model_predictive_control.yaml

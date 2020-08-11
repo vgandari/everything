@@ -1,5 +1,0 @@
-q:
-  - does not scale well to high-dimensional systems
-  - suitable for unconstrained low-dimensional systems
-  - requires discretization of full state space
-  - yields global policy for minimizing objective

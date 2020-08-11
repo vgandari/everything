@@ -1,4 +1,0 @@
-after:
-  - ./def_basic_solution.yaml
-  - ./def_column_basis.yaml
-  - ./def_basis.yaml

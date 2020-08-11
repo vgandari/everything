@@ -1,4 +1,0 @@
-after:
-  - ./def_basic_solution.yaml
-  - ./def_active-set_matrix.yaml
-  - ./def_permutation_matrix.yaml
