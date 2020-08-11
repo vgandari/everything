@@ -1,0 +1,7 @@
+# This is a placeholder to include all nodes related to regression
+# methods for surrogate modeling.
+req:
+  - ./plain_polynomial_regression.yaml
+  - ./def_spline.yaml
+  - ./def_artificial_neural_network.yaml
+  - ./def_support_vector_regression.yaml

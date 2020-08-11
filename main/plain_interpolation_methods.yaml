@@ -1,0 +1,7 @@
+# This is a placeholder to include all nodes related to interpolation
+# methods for surrogate modeling.
+req:
+  - ./plain_inverse_distance_weighting.yaml
+  - ./plain_radial_basis_functions.yaml
+  - ./plain_kriging.yaml
+  - ./x_regularized_minimal-energy_tensor-product_splines.yaml

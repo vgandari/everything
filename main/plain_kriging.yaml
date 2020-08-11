@@ -1,0 +1,4 @@
+req:
+  - ./plain_radial_basis_functions.yaml
+aka:
+  - Gaussian process regression (GPR)

@@ -10,3 +10,9 @@ src:
       volume = {75},
       year = {2018}
     }
+req:
+  - ./plain_inverse_distance_weighting.yaml
+  - ./plain_radial_basis_functions.yaml
+  - ./plain_kriging.yaml
+main: |
+  \cite{Hwang2018b}.
