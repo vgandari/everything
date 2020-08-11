@@ -1,0 +1,4 @@
+main: |
+  A set whose elements are sets.
+req:
+  - ./def_set.yaml

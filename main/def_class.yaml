@@ -1,0 +1,12 @@
+req:
+  - ./def_data_type.yaml
+  - ./def_struct.yaml
+incl:
+  - ./def_object_oriented_programming.yaml
+main: |
+  A class is a data type~\ref{def:def_data_type.yaml} that contains data
+  and associates that data with a behavior, typically defined by
+  functions.
+post: |
+  A class differs from a struct~\ref{def:def_struct.yaml} in that a
+  struct only contains data.

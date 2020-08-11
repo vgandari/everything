@@ -1,0 +1,17 @@
+main: |
+  A function is a relation of elements from a set or sets to a set.
+post: |
+  In some contexts, a function is
+req:
+  - ./def_set.yaml
+  - ./def_relation.yaml
+incl:
+  - ./def_bijective_function.yaml
+  - ./def_surjective_function.yaml
+  - ./def_injective_function.yaml
+  - ./def_domain_of_a_function.yaml
+  - ./def_codomain.yaml
+q:
+  - domain
+  - codomain
+  - image

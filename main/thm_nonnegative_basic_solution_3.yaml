@@ -1,0 +1,4 @@
+req:
+  - ./def_nondegenerate_vertex.yaml
+  - ./def_feasible_region.yaml
+  - ./thm_nonnegative_basic_solution.yaml

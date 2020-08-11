@@ -1,0 +1,9 @@
+pre: |
+  Constraints that block the step along $p$ are given a special name.
+main: |
+  Given the maximum step $\gamma$ from a feasible $x$ along a feasible
+  direction $p$, then any constraint such that $r_t(x+\gamma p) = 0$, is
+  a blocking constraint.
+post: |
+  The step $\gamma$ is unique, but there may be more than one blocking
+  constraint.

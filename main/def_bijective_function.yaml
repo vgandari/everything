@@ -1,0 +1,10 @@
+main: |
+  If there exists a function $g:B\to A$ such that $x = g(f(x)), x\in A$,
+  where $f:A\to B$, then $f$ is said to be invertible and its inverse is
+  $g$.
+post: |
+  The function $g$ is also invertible with inverse $f$.
+req:
+  - ./def_function.yaml
+aka:
+  - Bijective Function

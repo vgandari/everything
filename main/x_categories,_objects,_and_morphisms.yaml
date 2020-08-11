@@ -1,0 +1,6 @@
+main: |
+  We denote objects by points and morphisms by arrows.
+req:
+  - ./def_category.yaml
+  - ./def_object.yaml
+  - ./def_morphism.yaml

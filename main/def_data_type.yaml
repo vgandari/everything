@@ -1,0 +1,6 @@
+# eli5: |
+#   A data type is a set of values and a set of valid operations on those
+#   values.
+#   The concept of a type is typically used in the context of programming
+#   languages, where the type determines a set of \emph{allowed} values.
+#   The notion of a type varies from language to language.

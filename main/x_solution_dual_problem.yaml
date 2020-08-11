@@ -1,0 +1,6 @@
+req:
+  - ./x_duality_theory.yaml
+  - ./def_basic_solution.yaml
+main: |
+  The optimal value $y^*$ of the dual problem is the a basic solution of
+  the dual constraints.

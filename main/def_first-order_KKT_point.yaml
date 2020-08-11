@@ -1,0 +1,19 @@
+main: |
+  The first-order KKT conditions hold if there exists a Lagrange
+  multiplier $y_a$ such that
+
+  \begin{equation}
+    \begin{aligned}
+      c\left(x^{*}\right) \geq 0, & \quad c_{a}\left(x^{*}\right)=0, & \text{feasibility}\\
+      \nabla f\left(x^{*}\right) &=J_{a}\left(x^{*}\right)^{T} y_{a}^{*} & \text{stationarity}\\
+      y_{a}^{*} & \geq 0 & \text{nonnegativity of multipliers}
+    \end{aligned}
+  \end{equation}
+post: |
+  If certain constraint qualifications hold at $x^*$, then the KKT
+  conditions are necessary conditions for a local minimizer $x^*$.
+req:
+  - ./def_first-order_KKT_conditions.yaml
+  - ./def_constraint_qualification.yaml
+q:
+  - Constraint qualifications for the inequality constraint case

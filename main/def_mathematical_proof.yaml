@@ -1,0 +1,14 @@
+post: |
+  Proofs are mathematical objects.
+q:
+  - Proofs are mathematical objects.
+  - Proofs are abstract mathematical objects.
+  - Characterized by an algebra.
+  - Proofs have some notion of equivalence between them.
+  - Equal proofs are interchangeable in all contexts.
+  - |
+    By giving proofs an algebraic structure, they can be used as a model
+    of computation
+
+incl:
+  - ./thm_curry-howard_isomorphism.yaml

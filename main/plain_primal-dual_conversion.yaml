@@ -1,0 +1,5 @@
+req:
+  - ./def_dual_feasible.yaml
+  - ./x_solution_dual_problem.yaml
+main: |
+  C.5.16-33

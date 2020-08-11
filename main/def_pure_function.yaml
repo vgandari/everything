@@ -1,0 +1,12 @@
+req:
+  - ./def_function.yaml
+main: |
+  In programming, a function is pure if it computes an output value,
+  given a set of input values, and no other values are changed
+post: |
+  A function that updates the values of the inputs or values outside the
+  function is considered \emph{impure}.
+  Impure functions have \emph{(side) effects}.
+  A side effect is a change that occurs outside the function.
+  In general, pure functions make a program easier to reason about.
+  Pure functions can also act on

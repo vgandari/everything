@@ -1,0 +1,15 @@
+req:
+  - ./def_struct.yaml
+  - ./def_data_type.yaml
+main: |
+  A type with more than one value constructor.
+
+  Groups values into a compound value.
+
+  Fields are anonymous; i.e. their signature includes only their type,
+  not a variable name.
+
+incl:
+  - ./def_structural_equivalence.yaml
+  - ./def_nominal_equivalence.yaml
+  - ./def_initial_algebra.yaml

@@ -1,0 +1,6 @@
+q:
+  - work by converting continuous problem into NLP
+incl:
+  - ./plain_direct_vs_indirect_transcription.yaml
+  - ./def_shooting_method.yaml
+  - ./plain_simultaneous_methods.yaml

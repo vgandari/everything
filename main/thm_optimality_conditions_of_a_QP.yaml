@@ -1,0 +1,5 @@
+req:
+  - ./def_quadratic_program.yaml
+  - ./def_first-order_KKT_conditions.yaml
+main: |
+  B.24.32

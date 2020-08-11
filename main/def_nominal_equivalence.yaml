@@ -1,0 +1,11 @@
+main: |
+  If two types share the same signature, they are said to be nominally
+  equivalent.
+post: |
+  Languages typically require structural equivalence between types in
+  order to treat those types as equivalent.
+  Languages may also impose nominal equivalence to create a stronger
+  type system.
+
+incl:
+  - ./def_structural_equivalence.yaml

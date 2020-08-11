@@ -1,0 +1,6 @@
+q:
+  - |
+    take the idea of proof more seriously than any other branch of
+    logic. This has many payoffs.
+req:
+  - ./def_mathematical_proof.yaml

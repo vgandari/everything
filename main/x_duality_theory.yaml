@@ -1,0 +1,12 @@
+req:
+  - ./x_standard_form.yaml
+  - ./x_all-inequality_form.yaml
+pre: |
+  The form of the LP affects the efficiency of the simplex method.
+  If the constraint matrix is fat, the simplex method
+  will perform better if the LP is written in standard form.
+  If the constraint matrix is tall, the simplex method
+  will perform better if the LP is written in all-inequality form.
+main: |
+  Duality theory can transorm the shape from one that results in a less
+  efficient computation into one that is more efficient.

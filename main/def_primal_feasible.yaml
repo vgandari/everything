@@ -1,0 +1,4 @@
+req:
+  - ./x_duality_theory.yaml
+main: |
+  any $x$ s.t. $Ax=\ge b$ is said to be primal feasible.

@@ -1,0 +1,7 @@
+main: |
+  A function that accepts every possible value of its input type.
+q:
+  - What does it mean to accept a value? Throw no exception?
+req:
+  - ./def_data_type.yaml
+wiki: https://en.wikipedia.org/wiki/Functional_completeness

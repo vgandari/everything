@@ -1,0 +1,16 @@
+req:
+  - ./def_type_theory.yaml
+  - ./def_constructive_mathematics.yaml
+  - ./x_intuitionistic_logic.yaml
+  - ./x_propositions_as_types.yaml
+  - ./x_axiom_of_choice.yaml
+  - ./x_homotopy_type_theory.yaml
+urls:
+  ? |
+    Martin-L\"{o}f dependent type theory
+  : https://ncatlab.org/nlab/show/Martin-L%C3%B6f+dependent+type+theory
+aka:
+  - Intuitionistic Type Theory
+  - Constructive Type Theory
+main: |
+  Type theory that supports constructive mathematics

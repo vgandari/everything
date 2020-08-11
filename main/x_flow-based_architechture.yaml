@@ -1,0 +1,3 @@
+main: |
+  Each component maps its inputs to its outputs, acting as a black box.
+  Intermediate variables are hidden from the framework.

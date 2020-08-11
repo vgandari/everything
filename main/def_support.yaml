@@ -1,0 +1,5 @@
+wiki: https://en.wikipedia.org/wiki/Support_(mathematics)
+main: |
+  The subset of the domain whose elements are not mapped to zero
+req:
+  - ./def_function.yaml

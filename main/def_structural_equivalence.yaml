@@ -1,0 +1,14 @@
+main: |
+  If two types can store the same types of values, they are said to be
+  structurally equivalent.
+post: |
+  Languages typically require structural equivalence between types in
+  order to treat those types as equivalent.
+  Languages may also impose nominal equivalence to create a stronger
+  type system.
+  If a language does not require nominal equivalence, then two types
+  that are structurally equivalent may have the same name.
+  In this case, the type signatures are aliases for the same type.
+
+incl:
+  - ./def_nominal_equivalence.yaml

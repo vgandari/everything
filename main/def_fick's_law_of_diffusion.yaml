@@ -1,0 +1,14 @@
+src:
+  - |
+    @article{faraday1834,
+    author = {Faraday, Michael },
+    title = {VI. Experimental researches in electricity.-Seventh Series},
+    journal = {Philosophical Transactions of the Royal Society of London},
+    volume = {124},
+    number = {},
+    pages = {77-122},
+    year = {1834},
+    doi = {10.1098/rstl.1834.0008},
+    URL = {https://royalsocietypublishing.org/doi/abs/10.1098/rstl.1834.0008},
+    eprint = {https://royalsocietypublishing.org/doi/pdf/10.1098/rstl.1834.0008},
+    }

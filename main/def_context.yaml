@@ -1,0 +1,5 @@
+main: |
+  A context (in Martin-Löf dependent type theory) is a finite ordered
+  list of typing declarations
+q:
+  - What is the equivalent of a context in \texttt{LSDObox}?

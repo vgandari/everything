@@ -1,0 +1,15 @@
+main: |
+  If there exists a morphism from a first object to a second object, and
+  another morphism from the second object to a third object, then a
+  morphism from the first object to the third object is called a
+  emph{composition} of the first and second morphisms.
+post: |
+  For every two arrows, a third arrow may denote their composition.
+  We can construct a composition table, which is like a multiplication
+  table, where morphisms are constructed by composition.
+  Different composition tables will yield different categories.
+req:
+  - ./def_morphism.yaml
+q:
+  - Do there exist/can we invent (logical) systems where morphisms
+    cannot necessarily be composed?

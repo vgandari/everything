@@ -1,0 +1,4 @@
+req:
+  - ./def_blocking_constraint.yaml
+main: |
+  $p$ is an unbounded direction if $\gamma=\infty$; i.e., $Ap\ge 0$.

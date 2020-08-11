@@ -1,0 +1,9 @@
+main: |
+  An object is a member of a category.
+post: |
+  In object oriented programming languages, an object is an instance of
+  a class.
+incl:
+  - ./def_class.yaml
+req:
+  - ./def_category.yaml

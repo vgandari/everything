@@ -1,0 +1,7 @@
+req:
+  - ./def_working_set_for_standard_form.yaml
+  - ./def_degenerate_vertex.yaml
+  - ./def_active-set_matrix.yaml
+main: |
+  When $x_k$ is a degenerate vertex, the working set is contained in the
+  active set ($\mathcal{W}\subset\mathcal{A}(x_k)$).

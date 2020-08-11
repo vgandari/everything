@@ -1,0 +1,8 @@
+main: |
+  A basic variable is one where the constraint $x_i \ge 0$ is not in the
+  working set.
+  A nonbasic variable is one where the constraint $x_i \ge 0$ is in the
+  working set.
+
+req:
+  - ./def_working_set_for_standard_form.yaml

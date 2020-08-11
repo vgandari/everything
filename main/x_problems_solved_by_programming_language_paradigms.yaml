@@ -1,0 +1,11 @@
+pre: |
+  Programming languages are written to solve a particular type of
+  problem, typically a type of problem of interest for a particular
+  community.
+  Programming languages adopt paradigms.
+  There is no single paradigm.
+  The reason that any language paradigm or multiple language paradigms
+  exist is to allow programmers to use the "right" abstraction to solve
+  a problem.
+  There may be one best abstraction for all problem types, or there may
+  be one best abstraction depending on the problem type.

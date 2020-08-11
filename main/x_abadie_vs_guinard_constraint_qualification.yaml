@@ -1,0 +1,5 @@
+req:
+  - ./def_abadie_constraint_qualification.yaml
+  - ./def_guinard_constraint_qualification.yaml
+main: |
+  Guignard CQ is a weaker condition than the Abadie CQ

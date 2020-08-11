@@ -1,0 +1,7 @@
+req:
+  - ./def_feasible_point.yaml
+main: |
+
+  B.1.6
+
+  p. 14 of Gill

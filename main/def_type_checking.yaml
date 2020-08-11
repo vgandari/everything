@@ -1,0 +1,5 @@
+req:
+  - ./def_data_type.yaml
+post: |
+  The goal of type checing is to ensure that only valid operations are
+  performed on corresponding types.

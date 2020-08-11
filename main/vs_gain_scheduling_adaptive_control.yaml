@@ -1,0 +1,12 @@
+req:
+  - ./x_gain_scheduling.yaml
+  - ./x_adaptive_control.yaml
+nowiki: true
+post: |
+  Use adaptive control when the number of states and constraints is
+  constant across all operating conditions.
+
+  Use gain scheduling when the number of states and constraints changes
+  across operating conditions.
+q:
+  - incomplete

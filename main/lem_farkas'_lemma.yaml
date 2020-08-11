@@ -1,0 +1,12 @@
+main: |
+  $g^{T} p \geq 0$ for all $p$ such that $A p \geq 0$
+  if and only if
+  $g=A^{T} y \text { for some } y \geq 0$.
+
+  This is equivalent to
+
+  $g^{T} p<0 \text { and } A p \geq 0$ if and only if $g$ cannot be
+  written as $A^{T} y$ for some $y \geq 0$.
+pfs:
+  - |
+    B.19.5

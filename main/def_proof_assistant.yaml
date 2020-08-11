@@ -1,0 +1,8 @@
+urls:
+  Coq: https://coq.inria.fr/
+  Agda: https://agda.readthedocs.io/en/v2.6.1/index.html
+  Idris 2: https://idris-lang.org
+  Epigram: http://www.e-pig.org/
+  Lean: https://leanprover.github.io/
+incl:
+  - ./def_dependent_types.yaml

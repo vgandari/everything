@@ -1,0 +1,154 @@
+\documentclass[oneside, openany]{memoir}
+\usepackage[inner=2cm, outer=2cm, top=2cm, bottom=2cm]{geometry}
+
+\usepackage{helvet}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usetikzlibrary{shapes,arrows}
+\usepackage[english]{babel}
+\usepackage{pifont}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{appendix}
+\usepackage{gensymb}
+\usepackage{index}
+
+\let\openbox\relax
+\usepackage{amsthm}
+\usepackage{bbm}
+\usepackage{xcolor,graphicx}
+\usepackage{imakeidx}
+\usepackage{mathtools}
+\mathtoolsset{showonlyrefs=true, showmanualtags=true}
+\usepackage{listings}
+\makeindex[columns=2,title=Index]
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{appendix}
+\usepackage{etoc}
+\etocchecksemptiness
+\etocnotocifnotoc
+
+
+% TODO: Make GitHub style listings
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+}
+\lstset{style=mystyle}
+
+%\newtheorem{theorem}{Theorem}[section]
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{remark}[theorem]{Remark}
+%\newtheorem{problem}[theorem]{Problem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{trule}[theorem]{Rule}
+\newtheorem{rec}[theorem]{Recommendation}
+
+% Example environment.
+\newtheoremstyle{eg}{\topsep}{\topsep}
+% Body font
+{}
+% Indent amount (empty = no indent, \parindent = para indent)
+{}
+% Thm head font
+{\bfseries}
+% Punctuation after thm head
+{}
+% Space after thm head (\newline = linebreak)
+{\newline}
+% Thm head spec
+{\thmname{#1}\thmnumber{ #2}\thmnote{ {\normalfont (#3).}}}
+
+\theoremstyle{eg}
+\newtheorem{eg}[theorem]{Example}
+\newenvironment{example}{\begin{eg}}{\hfill$\diamond$\end{eg}}
+
+\newcommand*{\myfont}{\fontfamily{phv}\selectfont}
+
+\title{\MakeTextUppercase{Everything...\\[0.5\baselineskip]
+or at Least Some of It\\[2\baselineskip]}}
+\author{Victor E. Gandarillas}
+
+\renewcommand{\maketitle}{{%
+\thispagestyle{empty}
+\vfill
+\hbox{%
+\hspace*{0.1\textwidth}%
+\rule{2pt}{\dimexpr\textheight-28pt\relax}%
+\hspace*{0.05\textwidth}%
+\parbox[b]{0.75\textwidth}{
+\vbox{%
+\vspace{0.1\textheight}
+{\noindent\HUGE\myfont \textmd{\thetitle}}
+{\Large\myfont \theauthor}\par
+\vspace{0.5\textheight}
+% {\noindent\myfont Publisher}\\[\baselineskip]
+}% end of vbox
+}% end of parbox
+}% end of hbox
+\vfill}
+\newpage}
+
+\copypagestyle{mypagestyle}{plain}
+\makeevenfoot{plain}{}{}{\thepage}
+\makeoddfoot{plain}{}{}{\thepage}
+\createmark{section}{right}{nonumber}{}{}
+\makeoddhead{mypagestyle}{\myfont\thesection~\rightmark}{}{\thepage}
+
+\makechapterstyle{mychapterstyle}{%
+\setlength{\beforechapskip}{0pt}
+\renewcommand*{\chapnamefont}{\Large\centering}
+\renewcommand*{\chapnumfont}{\HUGE\centering}
+\renewcommand*{\printchaptername}{}
+\renewcommand*{\printchapternum}{%
+\chapnumfont--\hspace{3pt}\thechapter\hspace{3pt}--}
+\renewcommand*{\chaptitlefont}{\LARGE\myfont}
+\renewcommand*{\printchaptertitle}[1]{%
+\hrule\vskip\onelineskip \centering\chaptitlefont
+\MakeTextUppercase{##1}}}
+\chapterstyle{mychapterstyle}
+
+\makechapterstyle{mysectionstyle}{%
+\setlength{\beforechapskip}{0pt}
+\renewcommand*{\chapnamefont}{}
+\renewcommand*{\chapnumfont}{}
+\renewcommand*{\printchaptername}{}
+\renewcommand*{\printchapternum}{}
+\renewcommand*{\chaptitlefont}{}
+\renewcommand*{\printchaptertitle}[1]{%
+\chaptitlefont \textsc{##1}}}
+\setsecheadstyle{\noindent\Large\textsc}
+\setsubsecheadstyle{%
+\noindent\large\thesubsection\hspace{1em}\textsc}
+
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{main.bib}

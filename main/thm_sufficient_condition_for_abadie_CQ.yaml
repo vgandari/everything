@@ -1,0 +1,4 @@
+req:
+  - ./x_abadie_vs_guinard_constraint_qualification.yaml
+main: |
+  B.2.10

@@ -1,0 +1,5 @@
+main: |
+  The reduced costs are the multipliers associated with $x>0$.
+
+req:
+  - ./thm_optimality_conditions_for_an_LP_in_standard_form.yaml

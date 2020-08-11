@@ -1,0 +1,4 @@
+req:
+  - ./x_duality_theory.yaml
+main: |
+  Any dual variable $y$ s.t. $Ay=c$, $y\ge 0$ is dual feasible.

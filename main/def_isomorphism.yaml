@@ -1,0 +1,10 @@
+req:
+  - ./def_morphism.yaml
+  - ./def_function.yaml
+  - ./def_identity.yaml
+post: |
+  A function that is invertible is an isomorphism.
+  The composition of two isomorphisms is the identity.
+q:
+  - When can we say that two things are isomorphic?
+  - Include formal definition in Agda/Coq

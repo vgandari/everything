@@ -1,0 +1,18 @@
+main: |
+  A function that is surjective and injective is bijective, but a
+  morphism that is an epimorphism and a monomorphism is not an
+  isomorphism.
+req:
+  - ./def_monomorphism.yaml
+  - ./def_epimorphism.yaml
+  - ./def_isomorphism.yaml
+  - ./def_surjective_function.yaml
+  - ./def_injective_function.yaml
+  - ./def_bijective_function.yaml
+q:
+  - Empty set does not correspond to a type in imperative languages.
+  - The closest you get is \texttt{void}.
+  - Empty set corresponds to a type in Haskell
+  - The empty set is an object in the category of sets.
+  - The identity function in the category of sets must accept void as an
+    argument and return void

@@ -1,0 +1,15 @@
+req:
+  - ./def_graph.yaml
+  - ./def_category.yaml
+  - ./def_morphism.yaml
+main: |
+  Graphs and categories may seem similar at first.
+  Each object in a category may correspond to a node/vertex in a graph,
+  each arrow/morphism in a category may correspond to a directed edge in
+  a graph.
+  Not every graph is a category.
+q:
+  - graphs that are not fully connected?
+  - multigraphs?
+  - which trees are categories?
+  - composition of edges?

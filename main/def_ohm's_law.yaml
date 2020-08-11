@@ -1,0 +1,4 @@
+main: |
+  \begin{equation}
+    I=\frac{V}{R}
+  \end{equation}

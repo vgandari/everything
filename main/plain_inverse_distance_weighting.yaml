@@ -1,0 +1,20 @@
+req:
+  - ./plain_surrogate_model.yaml
+main: |
+    \cite{shepard1968}
+src:
+  - |
+    @inproceedings{shepard1968,
+        author = {Shepard, Donald},
+        title = {A Two-Dimensional Interpolation Function for Irregularly-Spaced Data},
+        year = {1968},
+        isbn = {9781450374866},
+        publisher = {Association for Computing Machinery},
+        address = {New York, NY, USA},
+        url = {https://doi.org/10.1145/800186.810616},
+        doi = {10.1145/800186.810616},
+        booktitle = {Proceedings of the 1968 23rd ACM National Conference},
+        pages = {517–524},
+        numpages = {8},
+        series = {ACM ’68}
+    }

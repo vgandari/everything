@@ -1,0 +1,7 @@
+req:
+  - ./def_working_set_for_standard_form.yaml
+main: |
+  Implementation: C.5.35
+urls:
+  Simplex Method, Example 1: https://www.youtube.com/watch?v=rzRZLGD_aeE
+  Simplex Method, Example 2: https://www.youtube.com/watch?v=U41-HLS_oF8

@@ -1,0 +1,7 @@
+main: |
+  The ability to compose a system from pre-defined components.
+post: |
+  Systems that are composable allow for reuse.
+q:
+  - How OOP achieves composability
+  - How FP achieves composability

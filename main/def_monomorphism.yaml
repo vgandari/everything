@@ -1,0 +1,5 @@
+req:
+  - ./def_injective_function.yaml
+  - ./def_morphism.yaml
+q:
+  - generalization of injective function

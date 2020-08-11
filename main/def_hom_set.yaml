@@ -1,0 +1,6 @@
+main: |
+  A set of arrows
+req:
+  - ./def_set.yaml
+  - ./def_morphism.yaml
+  - ./def_category.yaml

@@ -1,0 +1,15 @@
+req:
+  - ./def_constraint_qualification.yaml
+  - ./def_feasible_path.yaml
+  - ./def_tangent_cone.yaml
+main: |
+  B.2.4~\cite{d2010autonomous}
+
+src:
+  - |
+    @article{d2010autonomous,
+      title={Autonomous formation flying in low earth orbit},
+      author={D'Amico, Simone},
+      year={2010},
+      publisher={Ridderprint Bv}
+    }

@@ -1,0 +1,7 @@
+req:
+  - ./def_hom_set.yaml
+  - ./def_order.yaml
+main: |
+  Every home set is either an empty set or a singleton set.
+post: |
+  An order is an example of a thin category.

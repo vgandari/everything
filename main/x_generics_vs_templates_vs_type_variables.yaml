@@ -1,0 +1,4 @@
+req:
+  - ./def_generics.yaml
+  - ./def_template.yaml
+  - ./def_type_variable.yaml

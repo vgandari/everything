@@ -1,0 +1,14 @@
+req:
+  - ./x_set_theory.yaml
+  - ./def_set.yaml
+  - ./def_data_type.yaml
+  - ./def_type_theory.yaml
+post: |
+  A set can be defined in terms of itself; e.g. a set that contains all
+  set except iteslf.
+  A type cannot be defined in terms of itself.
+  This implies that types exist within a hierarchy.
+incl:
+  - ./plain_russel's_paradox.yaml
+q:
+  - Proof that types exist in a hierarchy

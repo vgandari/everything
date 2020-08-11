@@ -1,0 +1,38 @@
+req:
+  - ./x_Reynolds-Averaged_Navier–Stokes_(RANS).yaml
+  - ./x_euler_equations.yaml
+  - ./def_parameter_sweep.yaml
+  - ./def_aerodynamic_shape_optimization.yaml
+  - ./x_computational_fluid_dynamics.yaml
+main: |
+  Demonstrates benefit of direct memory access in MDA codes
+
+  Solving Navier-Stokes equations is not sufficient for efficient design
+  optimization.
+
+  ADFlow is a flow solver designed to be suitable for design optimization.
+
+  library that provides direct memory access
+
+  Where do recommendations for developing a flow solver come from?
+
+  Summarize performance advantages.
+
+  shape optimization?
+  overset flow solver?
+
+  "ADflow is used to solve both aerodynamic and aerostructural design
+  optimization problemsfor the Common Research Model (CRM) geometry
+  [4]."
+
+  solver as software library
+
+  sections 2 and 3 are requirements, solver agnostic
+
+  "aerodynamic  optimization  with  a  direct  memory  access  API
+  saves 12\%  to  25\%  of  the  optimization  time"
+
+  "aerostructural  optimization,  the  costcan be reduced by up to a
+  factor of three compared to a file I/O based approach"
+q:
+  - How to ADFlow requirements apply to LSDObox?

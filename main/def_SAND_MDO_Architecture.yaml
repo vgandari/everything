@@ -1,0 +1,9 @@
+req:
+  - ./def_MDF_MDO_Architecture.yaml
+main: |
+  optimization problem is bigger
+  more design vvariables
+  more constraints
+  model evaluation is faster
+
+  implicit/nonlinear disciplines treated as constraints

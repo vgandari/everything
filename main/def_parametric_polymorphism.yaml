@@ -1,0 +1,7 @@
+main: |
+  A type that is defined in terms of another type is a polymorphic type.
+post: |
+  Polymorphic types in Haskell have parametric polymorphism.
+req:
+  - ./def_polymorphism.yaml
+  - ./x_generics_vs_templates_vs_type_variables.yaml

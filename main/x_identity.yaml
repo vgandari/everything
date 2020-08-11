@@ -1,0 +1,5 @@
+post: |
+  For every object in a category, there is an identity.
+req:
+  - ./def_category.yaml
+  - ./def_object.yaml

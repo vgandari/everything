@@ -1,0 +1,8 @@
+req:
+  - ./def_cartesian_product.yaml
+main: |
+  Subset of Cartesian product
+post: |
+  A relation expresses some correspondence between elements of two sets.
+  The subset of the Cartesian product does not need to be an enumeration
+  of all possible pairs.

@@ -1,0 +1,6 @@
+req:
+  - ./def_tensor.yaml
+  - ./def_outer_product.yaml
+pre: |
+  The tensor product is a generalization of the outer product for
+  matrices.

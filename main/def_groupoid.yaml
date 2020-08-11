@@ -1,0 +1,7 @@
+main: |
+  A category in which every arrow/morphism has an inverse.
+req:
+  - ./def_category.yaml
+  - ./def_morphism.yaml
+q:
+  - Relationship with groups in abstract algebra?

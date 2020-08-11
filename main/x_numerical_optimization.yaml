@@ -1,0 +1,13 @@
+req:
+  - ./def_active_constraint.yaml
+  - ./def_active-set_matrix.yaml
+  - ./def_general_constraint_matrix.yaml
+  - ./x_all-inequality_form.yaml
+  - ./def_working_set_for_standard_form.yaml
+  - ./plain_simplex_method.yaml
+  - ./thm_nonnegative_basic_solution_3.yaml
+  - ./thm_nonnegative_basic_solution_2.yaml
+  - ./thm_existence_of_a_vertex.yaml
+  - ./x_degenerate_vertex_working_active.yaml
+  - ./def_first-order_KKT_point.yaml
+  - ./lem_farkas'_lemma.yaml

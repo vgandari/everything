@@ -1,0 +1,5 @@
+req:
+  - ./def_object.yaml
+  - ./x_problems_solved_by_programming_language_paradigms.yaml
+q:
+  - relationship with Lambda Calculus and Turing Machine?

@@ -1,0 +1,9 @@
+main: |
+  Consider the standard-form linear program
+  \[
+  \underset{x \in \mathbb{R}^{n}}{\operatorname{minimize}} c^{T} x \quad \text { subject to } \quad A x=b, \quad x \geq 0
+  \]
+  Then $x^{*}$ is a minimizer if and only if
+  (A) $A x^{*}=b, x^{*} \geq 0$
+  (B) $c=A^{T} \pi^{*}+z^{*}, \quad z^{*} \geq 0$
+  (C) $z^{*} \cdot x^{*}=0$

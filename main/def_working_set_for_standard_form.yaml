@@ -1,0 +1,19 @@
+req:
+  - ./def_constraint.yaml
+  - ./def_active_constraint.yaml
+  - ./def_nonsingular_matrix.yaml
+main: |
+  Basic and nonbasic set (UCSD MATH 271C 2.14)
+  B.24.40
+
+  $j\in\mathcal{W}_k$ implies that the $j^{\text{th}}$ constraint is
+  active at $x_k$.
+
+  $\mathcal{W}_k$ contains indices of linearly independent constraint
+  gradients.
+post: |
+  In general, many working-set constraints have negative multipliers.
+  For standard form, the term “nonbasic set” is always used instead of
+  the term “working set”.
+q:
+  - split working-set from working-set for standard form

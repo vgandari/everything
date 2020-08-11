@@ -1,0 +1,17 @@
+pre: |
+    unified framework for program synthesis problems~\cite{alur2013}
+src:
+  - |
+    @inproceedings{alur2013,
+      author={R. {Alur} and R. {Bodik} and G. {Juniwal} and M. M. K.
+      {Martin} and M. {Raghothaman} and S. A. {Seshia} and R. {Singh}
+      and A. {Solar-Lezama} and E. {Torlak} and A. {Udupa}},
+      booktitle={2013 Formal Methods in Computer-Aided Design},
+      title={Syntax-guided synthesis},
+      year={2013},
+      volume={},
+      number={},
+      pages={1-8},
+    }
+req:
+  - ./def_boolean_satisfiability_problem.yaml

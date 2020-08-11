@@ -1,0 +1,9 @@
+req:
+  - ./def_category.yaml
+  - ./def_identity.yaml
+main: |
+  We can form categories that seem trivial at first.
+  For example, a category with no objects is a category.
+  The category with no objects has no morphisms.
+  A category with a single object is a category, and the only morphism
+  in this catgory is the identity morphism.

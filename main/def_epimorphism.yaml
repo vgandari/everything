@@ -1,0 +1,9 @@
+req:
+  - ./def_surjective_function.yaml
+  - ./def_morphism.yaml
+  - ./def_category.yaml
+  - ./def_category_of_sets.yaml
+q:
+  - generalization of surjective function
+post: |
+  In the category of sets, an epimorphism is a surjective function.

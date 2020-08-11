@@ -1,0 +1,6 @@
+req:
+  - ./def_MDF_MDO_Architecture.yaml
+  - ./def_SAND_MDO_Architecture.yaml
+main: |
+  Allow residuals to converge to higher tolerance during model
+  evaluation and then treat residuals as constraints

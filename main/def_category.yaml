@@ -1,0 +1,45 @@
+wiki: https://en.wikipedia.org/wiki/Category_(mathematics)
+urls:
+  ? |
+    Category Theory - YouTube
+  : |
+    https://www.youtube.com/playlist?list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_
+  ? |
+    Category Theory II - YouTube
+  : |
+    https://www.youtube.com/playlist?list=PLbgaMIhjbmElia1eCEZNvsVscFef9m0dm
+  ? |
+    Category Theory III - YouTube
+  : |
+    https://www.youtube.com/playlist?list=PLbgaMIhjbmEn64WVX4B08B4h2rOtueWIL
+  ? |
+    Book: Category Theory for Programmers
+  : |
+    https://www.blurb.com/b/9621951-category-theory-for-programmers-new-edition-hardco
+incl:
+  - ./def_functor.yaml
+  - ./def_identity.yaml
+  - ./def_object.yaml
+  - ./x_abstraction.yaml
+q:
+  - What does CT have to do with Turing Machines?
+src:
+  - |
+    @book{milewski2018category,
+      title={Category theory for programmers},
+      author={Milewski, Bartosz},
+      year={2018},
+      publisher={Blurb}
+    }
+eli5: |
+  A category is a "bunch" of objects.
+q:
+  - Discuss hunter-gatherer language from CT 1.2
+  - How to prove that something is a category? (graph, category of sets)
+  - single arrow from each object to another object; multigraphs are not
+    categories.
+req:
+  - ./def_associativity.yaml
+main: |
+  Morphisms are associateive over objects within a category.
+  A category has the identity morphism.

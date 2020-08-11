@@ -1,0 +1,8 @@
+req:
+  - ./def_function.yaml
+  - ./def_morphism.yaml
+q:
+  - The identity function is an identity morphism
+  - Recursion is induction; Infinite composition of functions is a
+    fixed-point iteration; Infinite composition of morphisms...has a
+    name?

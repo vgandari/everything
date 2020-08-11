@@ -1,0 +1,7 @@
+main: |
+  The process of adding arrows/morphisms to a category "freely" is a
+  free construction of a category.
+req:
+  - ./def_graph.yaml
+  - ./def_category.yaml
+  - ./def_morphism.yaml

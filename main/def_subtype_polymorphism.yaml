@@ -1,0 +1,6 @@
+req:
+  - ./def_polymorphism.yaml
+post: |
+  Subtype polymorphism is a feature of object-oriented languages.
+q:
+  - definition?

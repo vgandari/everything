@@ -1,0 +1,10 @@
+post: |
+  In set theory, a monoid is a set with a unit object and associativity.
+  Natural numbers with addition are a monoid.
+  List contatenation is a monoid, with the unit defined as the empty
+  List (same with strings).
+  The monoid only has one hom set.
+req:
+  - ./def_hom_set.yaml
+urls:
+  Monoid: https://youtu.be/aZjhqkD6k6w?list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_&t=2580

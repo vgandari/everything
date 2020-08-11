@@ -1,0 +1,4 @@
+incl:
+  - ./x_lambda_calculus.yaml
+q:
+  - Relationship between Turing Machine and Lambda Calculus?

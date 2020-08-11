@@ -1,0 +1,10 @@
+incl:
+  - ./def_SAND_MDO_Architecture.yaml
+main: |
+  optimization problem is smaller
+  fewer design vvariables
+  fewer constraints
+  model evaluation is slower
+  fewer optimization iterations
+
+  implicit/nonlinear disciplines converge

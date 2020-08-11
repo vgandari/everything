@@ -1,0 +1,49 @@
+req:
+  - ./x_flow-based_architechture.yaml
+  - ./x_frameworks_for_solving_PDEs.yaml
+  - ./def_partial_differential_equation_(PDE).yaml
+  - ./plain_unified_derivatives_equation.yaml
+main: |
+  The Modular analysis and Unified Derivatives (MAUD)
+  architecture~\cite{hwang2018} is an architecture that improves upon
+  the flow-based architectures and frameworks designed for solving PDEs.
+
+  Forward mode computes derivatives of all output (objective and
+  constraints) and state variables with respect to a single input
+  variable.
+  Reverse mode computes derivatives of a single output (objective or
+  constraint) with respect to all design variables.
+src:
+  - |
+    @article{hwang2018,
+      author = {Hwang, John T. and Martins, Joaquim R.R.A.},
+      title = {A Computational Architecture for Coupling Heterogeneous
+      Numerical Models and Computing Coupled Derivatives},
+      year = {2018},
+      issue_date = {August 2018},
+      publisher = {Association for Computing Machinery},
+      address = {New York, NY, USA},
+      volume = {44},
+      number = {4},
+      issn = {0098-3500},
+      url = {https://doi.org/10.1145/3182393},
+      doi = {10.1145/3182393},
+      journal = {ACM Trans. Math. Softw.},
+      month = jun,
+      articleno = {37},
+      numpages = {39},
+      keywords = {multidisciplinary design optimization, optimization,
+      high-performance computing, complex systems, multiphysics
+      simulation, derivative computation, adjoint methods,
+      PDE-constrained optimization, engineering design, Python, Parallel
+      computing}
+    }
+q:
+  - Grid computing management?
+  - MAUD paper contains a lits of linear algebra libraries
+  - UDE paper (find bibtex) https://arc.aiaa.org/doi/full/10.2514/1.J052184
+urls:
+  ? |
+    OpenMDAO: Total Derivatives Theory; Unified Derivatives Equations
+  : |
+    http://openmdao.org/twodocs/versions/latest/theory_manual/total_derivs/total_derivs_theory.html#unified-derivatives-equations

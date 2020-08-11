@@ -1,0 +1,6 @@
+req:
+  - ./def_object.yaml
+  - ./def_object_oriented_programming.yaml
+  - ./x_problems_solved_by_programming_language_paradigms.yaml
+main: |
+  Abstractions in OOP hide the wrong things.

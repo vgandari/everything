@@ -1,0 +1,8 @@
+main: |
+  A \texttt{struct} (short for structure) is a data type that contains
+  more than one piece of data.
+req:
+  - ./def_data_type.yaml
+q:
+  - difference between struct and record?
+  - There's a much more general explanation of a struct
