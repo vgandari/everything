@@ -1,2 +1,2 @@
 req:
-  - x_single_input_single_outpit_system.yaml
+  - ./x_single_input_single_outpit_system.yaml

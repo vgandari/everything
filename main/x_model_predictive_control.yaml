@@ -114,9 +114,9 @@ req:
   - ./def_PID_controller.yaml
   - ./def_linear_quadratic_regulator.yaml
 incl:
-  - x_adaptive_MPC.yaml
-  - x_gain_scheduling_MPC.yaml
-  - x_nonlinear_MPC.yaml
+  - ./x_adaptive_MPC.yaml
+  - ./x_gain_scheduling_in_MPC.yaml
+  - ./x_nonlinear_MPC.yaml
 urls:
   ? |
     Understanding Model Predictive Control, Part 1: Why Use MPC?

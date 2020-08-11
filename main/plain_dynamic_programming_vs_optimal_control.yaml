@@ -1,2 +1,4 @@
 req:
   - ./plain_direct_vs_indirect_transcription.yaml
+  - ./def_dynamic_programming.yaml
+  - ./x_optimal_control.yaml

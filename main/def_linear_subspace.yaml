@@ -1,0 +1,5 @@
+pre: |
+  A vector space that is a subset of a vector space of higher dimension.
+req:
+  - ./def_set.yaml
+  - ./def_vector_space.yaml
