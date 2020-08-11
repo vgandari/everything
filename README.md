@@ -1,34 +1,26 @@
 # everything
 
-## About
-
 This repository is meant to contain everything...or at least some of it.
+This is where I keep all the notes for everything I (am supposed to)
+know.
+Whenever I want to look up a topic, I check to see if I've written a
+file for it.
+If I have, I generate a PDF document that contains everything I've had
+to learn (and may need to relearn) leading up to that topic or those
+topics of interest.
+I use my tool [Tree of Knowledge (tok)](https://github.com/vgandari/tok) to
+generate a textbook-like document.
+All topics in the document are guaranteed to be sotred in a way that
+will make sense to the reader.
 
-The purpose of this repository is to provide content for generating a
-textbook that is automatically organized using
-[tok](https://github.com/vgandari/tok).
+If you really want to include _everything_, run
 
-This project contains a set of YAML files formatted for processing by
-the `tok` tool.
+```sh
+tok $(find . -name '*.yaml' -print) -wu --headings
+```
 
-## Contributing
+For shorter documents, the `--extra-headings` option may make for nicer
+chapter/section heading generation and placement.
 
-See the guidelines for how to best write content in a YAML file in the
-documentation for [tok](https://github.com/vgandari/tok).
-
-Pull requests are welcome from any domain of expertise.
-Pull requests will be accepted if
-
-- There is no plagiarism
-- There are no errors when generating a textbook using `tok`
-- There are no missing references in the generated pdf.
-
-Please file an issue if, for example,
-
-- I missed any of the above
-- Any information is inaccurate or unclear and you are not an expert in
-  that domain (so that someone may submit a pull request with the
-  correction)
-
-Any feature requests for `tok` should be submitted as an issue for that
-repository.
+See the documentation for
+[Tree of Knowledge (tok)](https://github.com/vgandari/tok) for help.
